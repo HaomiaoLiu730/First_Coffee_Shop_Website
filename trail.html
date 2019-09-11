@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="trail.css" />
+  </head>
+
+  <body>
+    <div class="header">
+      <h1>Welcome to Lazy Cafe!</h1>
+    </div>
+    <div class="topNav">
+      <a href="#"> reservation</a>
+      <a href="#"> suggestions</a>
+      <a href="#"> application</a>
+    </div>
+    <br />
+    <div class="row">
+      <div class="column">
+        <script>
+          function donuts() {
+            document.getElementById("changeHeader").innerHTML =
+              "This is a donut world!";
+            document.getElementById("changeContent1").innerHTML =
+              "chocolate glazed donut";
+            document.getElementById("changeImg1").src = "chocolate-glaze.jpg";
+            document.getElementById("changeContent2").innerHTML =
+              "blueberry donut";
+            document.getElementById("changeImg2").src = "blueberry-donut.jpg";
+          }
+          function coffee() {
+            document.getElementById("changeHeader").innerHTML =
+              "This is a coffee world!";
+            document.getElementById("changeContent1").innerHTML = "Cold brew";
+            document.getElementById("changeImg1").src = "cold brew.jpg";
+            document.getElementById("changeContent2").innerHTML =
+              "caramel latte";
+            document.getElementById("changeImg2").src = "caramel latte.jpeg";
+          }
+        </script>
+        <ui>
+          <li><img src="donut.jpg" width="170" /></li>
+          <li><button onclick="donuts()">Explore Donuts!</button></li>
+          <li><img src="coffee.jpg" width="170" /></li>
+          <li><button onclick="coffee()">Explore Donuts!</button></li>
+          <li><a href="https://www.google.com/">Contact</a></li>
+          <li><a href="https://www.google.com/">Google</a></li>
+        </ui>
+      </div>
+      <div class="column2">
+        <h1 id="changeHeader"></h1>
+        <p id="changeContent1" style="font-size: 130%; color:lightgrey"></p>
+        <img id="changeImg1" style="width:150px; height: 150px" />
+        <p id="changeContent2" style="font-size: 130%; color: lightgray"></p>
+        <img id="changeImg2" style="width:150px; height: 150px" />
+      </div>
+    </div>
+    s
+  </body>
+</html>
